@@ -14,7 +14,7 @@ def get_lnglat_data():
     '''
     此处给出 传入算法的数据的结构。使用时按实际需求清洗数据即可。
     '''
-    df=pds.DataFrame({'loc_id':[1,2],'lng':[112.323,114.632],'':[33.2243,43.143]})
+    df=pds.DataFrame({'loc_id':[1,2],'lng':[112.323,114.632],'lat':[33.2243,43.143]})
     return df
     
 def pd_lnglat_meanshift_cluster(pd_df,bandwidth,eps,max_iteration=10,center_default_mode='random',min_num=2):
